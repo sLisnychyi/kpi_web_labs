@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: rgb(99, 57, 57);
+}
+
+.loadBtn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.res {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+}
+
+.card .card__picture img {
+    width: 100%;
+}
+
+.card .card__content {
+    padding: 10px 20px;
+}
