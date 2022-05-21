@@ -1,0 +1,1 @@
+https://slisnychyi.github.io/kpi_web_labs/lab5/index.html

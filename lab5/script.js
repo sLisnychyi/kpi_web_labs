@@ -9,21 +9,19 @@ const toggleClass = (node, className) => {
 
 
 document
-    .getElementById("eight-el")
+    .getElementById("third")
     .addEventListener("click", (ev) => {
-        toggleClass(ev.target, "color-blue");
+        toggleClass(ev.target, "color-green");
     });
 
 document
-    .querySelector("h3")
+    .querySelector("h2")
     .addEventListener("click", (ev) => {
-        toggleClass(ev.target, 'color-red');
+        toggleClass(ev.target, 'color-yellow');
     });
 
 // [END] ELEMENT CLICK
 
-
-// [START] IMAGE BTN
 
 const listContainer = document.getElementById('image-list');
 const zoomStep = 0.1;
@@ -46,8 +44,7 @@ document
     .addEventListener("click", (e) => {
         const imgElem = document.createElement("img");
         imgElem.classList = "img-js-class";
-        imgElem.src = "./img.png";
-
+        imgElem.src = "./amsterdam.jpeg";
 
         const imgContainer = document.createElement("div");
         imgContainer.classList = "image-container"
