@@ -2,9 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Лісничий С.В., ЗПІ-ЗП01, Lab 3, Варіант 2</title>
+    <style>
+        body {
+            min-height: 10vh;
+            width: 100vw;
+            overflow-x: hidden;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .content {
+            background-color: #ade4f6;
+        }
+
+        .header .text {
+            background-color: #239ec6;
+        }
+
+        .header .image {
+            background-color: #9191fb;
+        }
+
+        .footer {
+            background-color: #239ec6;
+        }
+
+        span {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* =================================================== */
+        /*                   float-container                    */
+        /* =================================================== */
+
+        .float-container {
+            margin: 35px 50px;
+            width: calc(100vw - 100px);
+            height: calc(100vh - 100px);
+            text-align: center;
+        }
+
+        .float-container .header {
+            height: calc(100% / 3.3333);
+        }
+
+        .float-container .content {
+            height: calc(100% / 3.3333);
+        }
+
+        .float-container .text {
+            width: auto;
+            height: 100%;
+            line-height: 100%;
+        }
+
+        .float-container .image {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+
+        .float-container .footer {
+            height: calc(100% / 3.3333);
+        }
+
+        /* =================================================== */
+        /*                    flex-container                    */
+        /* =================================================== */
+
+        .flex-container {
+            margin: calc(50px - 35px) 50px 50px;
+            width: calc(100vw - 100px);
+            height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container .header {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .flex-container .content {
+            flex-grow: 1;
+        }
+
+        .flex-container .text {
+            flex-grow: 1;
+        }
+
+        .flex-container .image {
+            flex-grow: 1;
+        }
+
+        .flex-container .footer {
+            flex-grow: 1;
+        }
+    </style>
 </head>
 <body>
+
+
+<div class="float-container">
+    <div class="header">
+        <div class="image">
+            <span>Img.</span>
+        </div>
+        <div class="text">
+            <span>Text.</span>
+        </div>
+    </div>
+    <div class="content"><span>Text.</span></div>
+    <div class="footer"><span>Img.</span></div>
+</div>
+
+<div class="flex-container">
+    <div class="header">
+        <div class="image"><span>Img.</span></div>
+        <div class="text"><span>Text.</span></div>
+    </div>
+    <div class="content"><span>Text.</span></div>
+    <div class="footer"><span>Img.</span></div>
+</div>
+
 
 </body>
 </html>
