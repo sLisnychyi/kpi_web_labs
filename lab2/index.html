@@ -3,8 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <title>Лісничий С.В., ЗПІ-ЗП01, Lab 2, Варіант 2</title>
+    <style>
+        :root {
+            color: #000000;
+
+            --blue: #008f8f;
+            --yellow: #00f5f5;
+        }
+
+        table {
+            width: 100%;
+            color: #bb0000;
+        }
+
+        table,
+        td,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+
+        .first-row {
+            background-color: var(--blue);
+        }
+
+        .first-row:hover {
+            background-color: var(--yellow);
+        }
+
+        .second-row {
+            background-color: var(--yellow);
+        }
+
+        .second-row:hover {
+            background-color: var(--blue);
+        }
+
+        #background {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            background: red;
+        }
+
+        #cross {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            top: 30px;
+            left: 30px;
+        }
+
+        #cross div {
+            position: absolute;
+            background: white;
+        }
+
+        #cross-vertical {
+            border-radius: 15%;
+            left: 27px;
+            width: 30%;
+            height: 75%;
+        }
+
+        #cross-horizontal {
+            border-radius: 15%;
+            top: 22%;
+            width: 75%;
+            height: 29%;
+        }
+
+    </style>
 </head>
+
 <body>
+<button onclick="location.href = 'https://slisnychyi.github.io/kpi_web_labs/index.html';" id="back-btn" class="float-left submit-button" >Back</button>
+<table >
+    <tbody>
+    <tr class="first-row">
+        <td colspan="2" rowspan="3">Лісничий</td>
+        <td>Сергій</td>
+        <td colspan="2" rowspan="3">Володимирович</td>
+        <td></td>
+    </tr>
+    <tr class="second-row">
+        <td>ЗП ЗПІ-01, Лаб 2</td>
+        <td>Варіант 02</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td colspan="3"></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<div id="background">
+    <div id="cross">
+        <div id="cross-vertical">
+        </div>
+        <div id="cross-horizontal">
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
